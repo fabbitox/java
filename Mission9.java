@@ -19,26 +19,34 @@ public class Mission9 {
 			case 0:
 				two = divide2;
 				three = 0;
-				while (two >= 0 && three <= 9) {
-					if (two <= 9)
-						System.out.println("(" + (two + 1) + ", " + (three + 1) + ", " + (i + 1) + ")");
-					two -= 3;
-					three += 2;
+				if (divide2 > 9) {// skip invalid answers
+					int count = (divide2 - 7) / 3;// makes two 7, 8 or 9
+					two -= count * 3;
+					three += count * 2;
 				}
+				printAnswer(two, three, i);
 				break;
 			case 1:
 				two = divide2 - 1;
 				three = 1;
-				while (two >= 0 && three <= 9) {
-					if (two <= 9)
-						System.out.println("(" + (two + 1) + ", " + (three + 1) + ", " + (i + 1) + ")");
-					two -= 3;
-					three += 2;
+				if (divide2 > 9) {
+					int count = (divide2 - 7) / 3;
+					two -= count * 3;
+					three += count * 2;
 				}
+				printAnswer(two, three, i);
 				break;
 			}
 		}
 
 		sc.close();
+	}
+
+	private static void printAnswer(int two, int three, int i) {
+		while (two >= 0 && three <= 9) {
+			System.out.println("(" + (two + 1) + ", " + (three + 1) + ", " + (i + 1) + ")");
+			two -= 3;
+			three += 2;
+		}
 	}
 }
