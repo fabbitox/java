@@ -9,7 +9,8 @@
   + 6: 이진수
   + 7: 최대공약수 최소공배수
   + 8: 팩토리얼
-  + 9: 2g, 3g, 5g 추로 무게 맞추기(10g ~ 100g)   
+  + 9: 2g, 3g, 5g 추로 무게 맞추기(10g ~ 100g)
+<br>
 + Data Structure Missions
   + RandArr: 랜덤 배열 사용하기
   + Matrix: 행렬 연산
