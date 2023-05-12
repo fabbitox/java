@@ -15,3 +15,4 @@
 + Data Structure Missions
   + RandArr: 랜덤 배열 사용하기
   + Matrix: 행렬 연산
+  + Queens: n-queens problem: n 입력
