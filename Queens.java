@@ -31,10 +31,12 @@ public class Queens {
 					}
 				}
 			}
-			if (j == n && i > 0) {// 앞으로 돌아감
+			if (i > 0) {// 앞으로 돌아감
 				Point p = board.pop();
 				i--;
 				j = p.getY() + 1;
+			} else {
+				break;
 			}
 		}
 		sc.close();
