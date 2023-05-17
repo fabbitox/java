@@ -16,3 +16,4 @@
   + RandArr: 랜덤 배열 사용하기
   + Matrix: 행렬 연산
   + Queens: n-queens problem: n 입력
+  + QueensBoard: 그림으로 출력, 해 개수 출력
